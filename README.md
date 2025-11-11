@@ -2,7 +2,7 @@
 
 This repository provides a Nextflow implementation of the cNMF pipeline (originally built with Snakemake).
 
-It is derived from the following projects: [cNMF] (https://github.com/dylkot/cNMF) and [cNMF_pipeline] (https://github.com/EngreitzLab/cNMF_pipeline).
+It is derived from the following projects: cNMF (https://github.com/dylkot/cNMF) and cNMF_pipeline (https://github.com/EngreitzLab/cNMF_pipeline).
 
 **Prerequisites:**
 
