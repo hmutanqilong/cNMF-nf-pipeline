@@ -1,0 +1,17 @@
+# cNMF pipeline parameters
+
+# --- input & output file ---- #
+analysisDir: "/project/xuanyao/qilong/Project/Core_Gene_Programs_II/05_causal_model/02_cNMF_gene_programs"
+count_fp: "/project/xuanyao/qilong/share_data/example_data/count_adata.h5ad"
+name: "pbmc"
+
+# --- parallel --- #
+total_workers: 30
+
+# --- K value --- #
+k_values: "20,30,40"
+n_iter: 100
+num_genes: 2000
+
+
+
