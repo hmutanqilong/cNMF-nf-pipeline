@@ -1,0 +1,99 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	56/da26bd	42341875	prepare_initial (prepare_initial)	COMPLETED	0	2025-11-23 23:29:12.854	29.2s	3.9s	82.6%	285.5 MB	1001.2 MB	41.2 MB	8.6 MB
+2	db/925d0e	42341878	prepare_generalized (prepare_generalized)	COMPLETED	0	2025-11-23 23:29:42.323	24.7s	2.5s	81.1%	102.1 MB	726.8 MB	34 MB	10.1 KB
+4	71/0161d3	42341882	factorize_worker (factorize_k20_worker1)	COMPLETED	0	2025-11-23 23:30:09.802	1m 57s	1m 29s	91.9%	231.6 MB	991.5 MB	36.4 MB	2.4 MB
+7	59/f242b7	42341883	factorize_worker (factorize_k20_worker4)	COMPLETED	0	2025-11-23 23:30:09.925	2m 14s	1m 39s	81.3%	231.9 MB	991.6 MB	36.4 MB	2.4 MB
+5	78/d3befa	42341881	factorize_worker (factorize_k20_worker2)	COMPLETED	0	2025-11-23 23:30:09.677	2m 14s	1m 40s	95.2%	233.9 MB	991.9 MB	36.4 MB	2.4 MB
+15	68/991c71	42341891	factorize_worker (factorize_k20_worker12)	COMPLETED	0	2025-11-23 23:30:13.746	2m 18s	1m 54s	93.4%	231.9 MB	991.6 MB	36.4 MB	2.5 MB
+27	0c/77ab95	42341904	factorize_worker (factorize_k20_worker24)	COMPLETED	0	2025-11-23 23:30:15.609	2m 16s	1m 48s	81.8%	232 MB	991.5 MB	36.4 MB	2.5 MB
+9	3c/33ff7d	42341886	factorize_worker (factorize_k20_worker6)	COMPLETED	0	2025-11-23 23:30:13.075	2m 19s	1m 49s	91.6%	232.5 MB	992.1 MB	36.4 MB	2.4 MB
+8	72/c7ac00	42341884	factorize_worker (factorize_k20_worker5)	COMPLETED	0	2025-11-23 23:30:10.056	2m 32s	2m 4s	93.0%	232.1 MB	991.6 MB	36.4 MB	2.4 MB
+13	c7/071d66	42341889	factorize_worker (factorize_k20_worker10)	COMPLETED	0	2025-11-23 23:30:13.484	2m 29s	1m 51s	87.4%	230.7 MB	989.4 MB	36.4 MB	2.5 MB
+35	ff/f19390	42341912	factorize_worker (factorize_k30_worker2)	COMPLETED	0	2025-11-23 23:30:17.225	2m 25s	1m 48s	87.7%	234.6 MB	992.2 MB	36.4 MB	2.4 MB
+10	21/1532b4	42341885	factorize_worker (factorize_k20_worker7)	COMPLETED	0	2025-11-23 23:30:12.717	2m 34s	1m 57s	91.2%	232.4 MB	992.1 MB	36.4 MB	2.4 MB
+14	2a/3ac208	42341890	factorize_worker (factorize_k20_worker11)	COMPLETED	0	2025-11-23 23:30:13.616	2m 33s	1m 59s	88.6%	233.7 MB	991.6 MB	36.4 MB	2.5 MB
+12	c3/12a723	42341888	factorize_worker (factorize_k20_worker9)	COMPLETED	0	2025-11-23 23:30:13.352	2m 34s	2m 2s	88.9%	231.9 MB	990.6 MB	36.4 MB	2.4 MB
+34	92/a8224c	42341910	factorize_worker (factorize_k30_worker1)	COMPLETED	0	2025-11-23 23:30:16.817	2m 35s	1m 55s	69.7%	233.1 MB	990.8 MB	36.4 MB	2.4 MB
+37	3c/3817f2	42341911	factorize_worker (factorize_k30_worker4)	COMPLETED	0	2025-11-23 23:30:17.007	2m 35s	1m 36s	82.0%	231.6 MB	991.6 MB	36.4 MB	2.4 MB
+17	0e/873e37	42341893	factorize_worker (factorize_k20_worker14)	COMPLETED	0	2025-11-23 23:30:14.008	2m 38s	2m 8s	79.9%	233.7 MB	991.6 MB	36.4 MB	2.5 MB
+6	49/c41eaf	42341879	factorize_worker (factorize_k20_worker3)	COMPLETED	0	2025-11-23 23:30:07.372	2m 50s	2m 13s	86.1%	232.1 MB	991.7 MB	36.4 MB	2.4 MB
+19	b4/aced1b	42341896	factorize_worker (factorize_k20_worker16)	COMPLETED	0	2025-11-23 23:30:14.422	2m 43s	2m 11s	78.9%	232 MB	991.8 MB	36.4 MB	2.5 MB
+3	f3/8430c1	42341880	factorize_worker (factorize_k20_worker0)	COMPLETED	0	2025-11-23 23:30:07.568	2m 49s	2m 7s	92.2%	232.1 MB	991.6 MB	36.4 MB	2.4 MB
+24	01/79e6b9	42341900	factorize_worker (factorize_k20_worker21)	COMPLETED	0	2025-11-23 23:30:14.930	2m 42s	2m 15s	82.9%	233.9 MB	990.9 MB	36.4 MB	2.5 MB
+26	9d/488fe2	42341902	factorize_worker (factorize_k20_worker23)	COMPLETED	0	2025-11-23 23:30:15.218	2m 42s	2m 18s	77.6%	232.1 MB	991.7 MB	36.4 MB	2.6 MB
+21	ec/ab6895	42341897	factorize_worker (factorize_k20_worker18)	COMPLETED	0	2025-11-23 23:30:14.552	2m 43s	1m 58s	90.9%	234.4 MB	991.2 MB	36.4 MB	2.5 MB
+43	11/014fc5	42341919	factorize_worker (factorize_k30_worker10)	COMPLETED	0	2025-11-23 23:30:18.610	2m 38s	1m 59s	80.1%	231.8 MB	991.6 MB	36.4 MB	2.5 MB
+16	e0/b348e4	42341892	factorize_worker (factorize_k20_worker13)	COMPLETED	0	2025-11-23 23:30:13.871	2m 48s	2m 16s	87.1%	234.2 MB	991.9 MB	36.4 MB	2.5 MB
+20	26/21a242	42341895	factorize_worker (factorize_k20_worker17)	COMPLETED	0	2025-11-23 23:30:14.289	2m 48s	2m 17s	83.1%	232.4 MB	990.2 MB	36.4 MB	2.5 MB
+11	a3/e499c6	42341887	factorize_worker (factorize_k20_worker8)	COMPLETED	0	2025-11-23 23:30:13.223	2m 54s	2m 21s	86.8%	231.2 MB	990.6 MB	36.4 MB	2.4 MB
+22	66/0732db	42341898	factorize_worker (factorize_k20_worker19)	COMPLETED	0	2025-11-23 23:30:14.675	2m 52s	2m 26s	83.5%	234.8 MB	992.4 MB	36.4 MB	2.5 MB
+39	eb/50e4ea	42341913	factorize_worker (factorize_k30_worker6)	COMPLETED	0	2025-11-23 23:30:17.407	2m 50s	2m 2s	78.0%	230.5 MB	990.2 MB	36.4 MB	2.4 MB
+32	74/e88b68	42341909	factorize_worker (factorize_k20_worker29)	COMPLETED	0	2025-11-23 23:30:16.609	2m 50s	1m 58s	74.4%	231.9 MB	991.6 MB	36.4 MB	2.6 MB
+23	91/b960b9	42341899	factorize_worker (factorize_k20_worker20)	COMPLETED	0	2025-11-23 23:30:14.804	2m 52s	2m 27s	76.1%	234 MB	991.6 MB	36.4 MB	2.5 MB
+30	6a/b1b776	42341906	factorize_worker (factorize_k20_worker27)	COMPLETED	0	2025-11-23 23:30:16.011	2m 51s	2m 15s	79.2%	231.8 MB	991.6 MB	36.4 MB	2.6 MB
+28	1b/8459b3	42341903	factorize_worker (factorize_k20_worker25)	COMPLETED	0	2025-11-23 23:30:15.410	2m 52s	2m 23s	78.7%	232.8 MB	992.1 MB	36.4 MB	2.5 MB
+31	dc/beb4a5	42341907	factorize_worker (factorize_k20_worker28)	COMPLETED	0	2025-11-23 23:30:16.226	2m 51s	2m 9s	74.5%	232 MB	991.5 MB	36.4 MB	2.5 MB
+45	b8/878c61	42341921	factorize_worker (factorize_k30_worker12)	COMPLETED	0	2025-11-23 23:30:19.007	2m 48s	2m 5s	83.2%	234.2 MB	992.2 MB	36.4 MB	2.5 MB
+25	dc/74b1d4	42341901	factorize_worker (factorize_k20_worker22)	COMPLETED	0	2025-11-23 23:30:15.062	2m 57s	2m 29s	73.5%	232 MB	991.6 MB	36.4 MB	2.5 MB
+49	e9/fb2ebc	42341925	factorize_worker (factorize_k30_worker16)	COMPLETED	0	2025-11-23 23:30:19.805	2m 52s	2m 9s	79.6%	234.2 MB	992 MB	36.4 MB	2.5 MB
+36	4c/0c5de5	42341914	factorize_worker (factorize_k30_worker3)	COMPLETED	0	2025-11-23 23:30:17.605	3m 6s	2m 18s	81.3%	233.8 MB	991.6 MB	36.4 MB	2.4 MB
+47	44/27eb8f	42341922	factorize_worker (factorize_k30_worker14)	COMPLETED	0	2025-11-23 23:30:19.221	3m 8s	2m 5s	80.9%	233.9 MB	991.6 MB	36.4 MB	2.5 MB
+50	44/103173	42341923	factorize_worker (factorize_k30_worker17)	COMPLETED	0	2025-11-23 23:30:19.408	3m 8s	2m 21s	79.2%	233.9 MB	991.6 MB	36.4 MB	2.5 MB
+46	d0/26f07b	42341920	factorize_worker (factorize_k30_worker13)	COMPLETED	0	2025-11-23 23:30:18.813	3m 8s	2m 31s	76.9%	232.6 MB	992.2 MB	36.4 MB	2.5 MB
+33	6a/a65ade	42341908	factorize_worker (factorize_k30_worker0)	COMPLETED	0	2025-11-23 23:30:16.410	3m 11s	2m 30s	77.0%	232.7 MB	992.5 MB	36.4 MB	2.4 MB
+44	21/32f17f	42341927	factorize_worker (factorize_k30_worker11)	COMPLETED	0	2025-11-23 23:30:20.212	3m 12s	2m 19s	74.4%	232 MB	991.6 MB	36.4 MB	2.5 MB
+38	17/8bfee6	42341915	factorize_worker (factorize_k30_worker5)	COMPLETED	0	2025-11-23 23:30:17.808	3m 24s	2m 30s	74.8%	233.8 MB	990.5 MB	36.4 MB	2.4 MB
+41	e4/012bf1	42341918	factorize_worker (factorize_k30_worker8)	COMPLETED	0	2025-11-23 23:30:18.407	3m 24s	2m 32s	78.6%	235 MB	992.2 MB	36.4 MB	2.4 MB
+18	cd/44ffab	42341894	factorize_worker (factorize_k20_worker15)	COMPLETED	0	2025-11-23 23:30:14.154	3m 33s	3m 8s	78.8%	232 MB	991.3 MB	36.4 MB	2.5 MB
+52	31/51f72a	42341926	factorize_worker (factorize_k30_worker19)	COMPLETED	0	2025-11-23 23:30:20.043	3m 27s	2m 24s	81.8%	232.7 MB	992.1 MB	36.4 MB	2.5 MB
+29	3a/2eee40	42341905	factorize_worker (factorize_k20_worker26)	COMPLETED	0	2025-11-23 23:30:15.806	3m 36s	2m 51s	82.5%	233.9 MB	991.6 MB	36.4 MB	2.5 MB
+42	d6/91c4a9	42341917	factorize_worker (factorize_k30_worker9)	COMPLETED	0	2025-11-23 23:30:18.216	3m 44s	2m 59s	60.4%	232.1 MB	991.6 MB	36.4 MB	2.4 MB
+48	2c/b69527	42341924	factorize_worker (factorize_k30_worker15)	COMPLETED	0	2025-11-23 23:30:19.605	3m 52s	2m 52s	80.9%	234.2 MB	992 MB	36.4 MB	2.5 MB
+40	17/1b6ae3	42341916	factorize_worker (factorize_k30_worker7)	COMPLETED	0	2025-11-23 23:30:18.019	4m 19s	3m 43s	47.5%	234.6 MB	991.3 MB	36.4 MB	2.4 MB
+55	f3/24e5d0	42341928	factorize_worker (factorize_k30_worker22)	COMPLETED	0	2025-11-23 23:30:20.412	4m 27s	1m 57s	94.1%	231.7 MB	991.6 MB	36.4 MB	2.5 MB
+51	14/996f73	42341929	factorize_worker (factorize_k30_worker18)	COMPLETED	0	2025-11-23 23:30:20.605	4m 26s	2m 1s	88.7%	234.7 MB	992.8 MB	36.4 MB	2.5 MB
+56	4f/0b31c0	42341931	factorize_worker (factorize_k30_worker23)	COMPLETED	0	2025-11-23 23:30:21.004	4m 46s	2m 1s	88.5%	232.1 MB	990.6 MB	36.4 MB	2.6 MB
+67	0e/a950ea	42341940	factorize_worker (factorize_k40_worker4)	COMPLETED	0	2025-11-23 23:30:22.809	4m 44s	1m 33s	81.7%	232 MB	991.6 MB	36.4 MB	2.4 MB
+53	70/0382d4	42341930	factorize_worker (factorize_k30_worker20)	COMPLETED	0	2025-11-23 23:30:20.807	4m 46s	2m 4s	90.9%	232.3 MB	990.8 MB	36.4 MB	2.5 MB
+60	f4/5d026e	42341934	factorize_worker (factorize_k30_worker27)	COMPLETED	0	2025-11-23 23:30:21.604	4m 55s	1m 56s	87.0%	232.8 MB	992.3 MB	36.4 MB	2.6 MB
+62	88/5ffd49	42341938	factorize_worker (factorize_k30_worker29)	COMPLETED	0	2025-11-23 23:30:22.433	4m 55s	1m 52s	77.9%	233.9 MB	991.6 MB	36.4 MB	2.6 MB
+58	19/5a29dc	42341932	factorize_worker (factorize_k30_worker25)	COMPLETED	0	2025-11-23 23:30:21.211	4m 56s	2m 5s	90.4%	233.7 MB	990.6 MB	36.4 MB	2.5 MB
+54	8b/9f3234	42341933	factorize_worker (factorize_k30_worker21)	COMPLETED	0	2025-11-23 23:30:21.404	5m 1s	2m 11s	85.9%	234.4 MB	992 MB	36.4 MB	2.5 MB
+64	42/c3bcb0	42341939	factorize_worker (factorize_k40_worker1)	COMPLETED	0	2025-11-23 23:30:22.604	5m	1m 45s	73.2%	231.9 MB	990.6 MB	36.4 MB	2.4 MB
+61	76/3459d6	42341937	factorize_worker (factorize_k30_worker28)	COMPLETED	0	2025-11-23 23:30:22.219	5m 10s	1m 59s	82.4%	233.7 MB	991.6 MB	36.4 MB	2.5 MB
+65	ed/60b521	42341943	factorize_worker (factorize_k40_worker2)	COMPLETED	0	2025-11-23 23:30:23.404	5m 9s	1m 55s	81.4%	232.9 MB	991.5 MB	36.4 MB	2.4 MB
+57	c5/5d237e	42341935	factorize_worker (factorize_k30_worker24)	COMPLETED	0	2025-11-23 23:30:21.808	5m 10s	1m 56s	77.2%	232.1 MB	991.6 MB	36.4 MB	2.5 MB
+69	e9/b8d606	42341945	factorize_worker (factorize_k40_worker6)	COMPLETED	0	2025-11-23 23:30:23.807	5m 8s	2m 7s	76.5%	231.3 MB	991.1 MB	36.4 MB	2.4 MB
+92	3b/c952c2	42341966	factorize_worker (factorize_k40_worker29)	COMPLETED	0	2025-11-23 23:30:30.072	5m 2s	1m 38s	87.9%	232.2 MB	991.8 MB	36.4 MB	2.6 MB
+66	dc/58819a	42341942	factorize_worker (factorize_k40_worker3)	COMPLETED	0	2025-11-23 23:30:23.213	5m 14s	2m 7s	86.6%	232.5 MB	992.1 MB	36.4 MB	2.4 MB
+75	ed/eadf80	42341951	factorize_worker (factorize_k40_worker12)	COMPLETED	0	2025-11-23 23:30:25.006	5m 12s	2m 8s	82.1%	232.7 MB	992.2 MB	36.4 MB	2.5 MB
+70	a8/f2872b	42341950	factorize_worker (factorize_k40_worker7)	COMPLETED	0	2025-11-23 23:30:24.807	5m 17s	2m 10s	79.7%	231.8 MB	991.6 MB	36.4 MB	2.4 MB
+81	b3/a3e84e	42341956	factorize_worker (factorize_k40_worker18)	COMPLETED	0	2025-11-23 23:30:26.003	5m 16s	2m 7s	82.8%	232 MB	991.9 MB	36.4 MB	2.5 MB
+73	6a/bad6b3	42341947	factorize_worker (factorize_k40_worker10)	COMPLETED	0	2025-11-23 23:30:24.205	5m 18s	2m	79.8%	231.5 MB	991.1 MB	36.4 MB	2.5 MB
+83	fa/e03661	42341958	factorize_worker (factorize_k40_worker20)	COMPLETED	0	2025-11-23 23:30:26.415	5m 21s	2m 8s	86.3%	234.1 MB	990.6 MB	36.4 MB	2.5 MB
+86	7f/810d39	42341960	factorize_worker (factorize_k40_worker23)	COMPLETED	0	2025-11-23 23:30:26.806	5m 20s	2m 11s	79.0%	232 MB	991.6 MB	36.4 MB	2.6 MB
+77	b3/df532b	42341952	factorize_worker (factorize_k40_worker14)	COMPLETED	0	2025-11-23 23:30:25.217	5m 22s	2m 3s	80.9%	234.3 MB	990.9 MB	36.4 MB	2.5 MB
+72	4b/02c547	42341948	factorize_worker (factorize_k40_worker9)	COMPLETED	0	2025-11-23 23:30:24.417	5m 28s	2m 13s	81.2%	232.1 MB	990.9 MB	36.4 MB	2.4 MB
+85	e6/1ef72a	42341962	factorize_worker (factorize_k40_worker22)	COMPLETED	0	2025-11-23 23:30:27.222	5m 25s	2m 17s	79.4%	232.3 MB	992.1 MB	36.4 MB	2.5 MB
+68	46/b9b560	42341944	factorize_worker (factorize_k40_worker5)	COMPLETED	0	2025-11-23 23:30:23.638	5m 33s	2m 22s	78.9%	232.6 MB	992.1 MB	36.4 MB	2.4 MB
+71	9f/39f35f	42341946	factorize_worker (factorize_k40_worker8)	COMPLETED	0	2025-11-23 23:30:24.002	5m 33s	2m 15s	87.3%	231.1 MB	990.6 MB	36.4 MB	2.4 MB
+74	17/8dbecd	42341949	factorize_worker (factorize_k40_worker11)	COMPLETED	0	2025-11-23 23:30:24.608	5m 32s	2m 13s	72.9%	234.6 MB	992.2 MB	36.4 MB	2.5 MB
+82	51/10209c	42341959	factorize_worker (factorize_k40_worker19)	COMPLETED	0	2025-11-23 23:30:26.606	5m 30s	2m 20s	87.0%	231.9 MB	992.3 MB	36.4 MB	2.5 MB
+90	07/4b12ad	42341967	factorize_worker (factorize_k40_worker27)	COMPLETED	0	2025-11-23 23:30:30.212	5m 27s	2m	90.5%	231.9 MB	991.6 MB	36.4 MB	2.6 MB
+79	04/d140d4	42341957	factorize_worker (factorize_k40_worker16)	COMPLETED	0	2025-11-23 23:30:26.209	5m 31s	2m 25s	70.7%	232.3 MB	991.9 MB	36.4 MB	2.5 MB
+80	8e/19118f	42341954	factorize_worker (factorize_k40_worker17)	COMPLETED	0	2025-11-23 23:30:25.604	5m 36s	2m 40s	71.5%	232.2 MB	991.6 MB	36.4 MB	2.5 MB
+91	0b/650084	42341965	factorize_worker (factorize_k40_worker28)	COMPLETED	0	2025-11-23 23:30:27.811	5m 34s	1m 47s	89.6%	234.1 MB	991.6 MB	36.4 MB	2.5 MB
+76	cb/734099	42341955	factorize_worker (factorize_k40_worker13)	COMPLETED	0	2025-11-23 23:30:25.805	5m 36s	2m 22s	83.2%	232.7 MB	991.2 MB	36.4 MB	2.5 MB
+59	53/49a85e	42341936	factorize_worker (factorize_k30_worker26)	COMPLETED	0	2025-11-23 23:30:22.006	5m 45s	2m 40s	91.1%	234.7 MB	991.3 MB	36.4 MB	2.5 MB
+84	20/218230	42341961	factorize_worker (factorize_k40_worker21)	COMPLETED	0	2025-11-23 23:30:27.008	5m 45s	2m 17s	81.9%	231.9 MB	991.6 MB	36.4 MB	2.5 MB
+63	fd/4eb760	42341941	factorize_worker (factorize_k40_worker0)	COMPLETED	0	2025-11-23 23:30:23.008	5m 54s	2m 53s	66.0%	231.2 MB	989.8 MB	36.4 MB	2.4 MB
+88	db/e5b1e6	42341963	factorize_worker (factorize_k40_worker25)	COMPLETED	0	2025-11-23 23:30:27.407	5m 50s	2m 16s	83.2%	231.8 MB	991.6 MB	36.4 MB	2.5 MB
+78	34/e11598	42341953	factorize_worker (factorize_k40_worker15)	COMPLETED	0	2025-11-23 23:30:25.410	5m 52s	2m 44s	89.0%	232.6 MB	992 MB	36.4 MB	2.5 MB
+89	f0/6ccc40	42341968	factorize_worker (factorize_k40_worker26)	COMPLETED	0	2025-11-23 23:30:30.337	6m 12s	2m 49s	86.0%	231.7 MB	991.6 MB	36.4 MB	2.5 MB
+87	ba/840fdc	42341964	factorize_worker (factorize_k40_worker24)	COMPLETED	0	2025-11-23 23:30:27.607	6m 54s	3m 25s	43.7%	232.9 MB	992.5 MB	36.4 MB	2.5 MB
+94	a8/b2fba4	42342004	factorize_complete (factorize_complete_k30)	COMPLETED	0	2025-11-23 23:37:24.320	22.8s	228ms	71.6%	3.2 MB	217.4 MB	2.6 MB	6.6 KB
+95	3d/9a2faf	42342005	factorize_complete (factorize_complete_k40)	COMPLETED	0	2025-11-23 23:37:24.454	22.6s	240ms	63.3%	3.2 MB	217.4 MB	2.6 MB	6.6 KB
+93	f3/fd4ae6	42342007	factorize_complete (factorize_complete_k20)	COMPLETED	0	2025-11-23 23:37:24.610	22.5s	224ms	72.0%	3.3 MB	217.4 MB	2.6 MB	6.6 KB
+96	c2/873a5d	42342012	check_and_repair_factorize (check_and_repair_factorize)	COMPLETED	0	2025-11-23 23:37:48.257	48.8s	17.1s	89.1%	228.2 MB	980.6 MB	37 MB	274.1 KB
+97	ea/645d8d	42342022	combine_results (combine_results)	COMPLETED	0	2025-11-23 23:38:37.227	14.9s	9.1s	89.9%	328.8 MB	1 GB	182.1 MB	70.9 MB
+98	12/6a7c6b	42342029	kplot (k_selection_plot)	COMPLETED	0	2025-11-23 23:38:52.245	34.8s	16.7s	91.8%	469.3 MB	1.2 GB	415.2 MB	165 KB

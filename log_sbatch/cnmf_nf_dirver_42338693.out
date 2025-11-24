@@ -1,0 +1,1425 @@
+
+ N E X T F L O W   ~  version 24.10.6
+
+Launching `main.nf` [special_majorana] DSL2 - revision: b6660230b0
+
+WARN: Access to undefined parameter `outdir` -- Initialise it to a default value eg. `params.outdir = some_value`
+WARN: Access to undefined parameter `prepare_time` -- Initialise it to a default value eg. `params.prepare_time = some_value`
+WARN: Access to undefined parameter `prepare_generalized_time` -- Initialise it to a default value eg. `params.prepare_generalized_time = some_value`
+WARN: Access to undefined parameter `factorize_worker_time` -- Initialise it to a default value eg. `params.factorize_worker_time = some_value`
+WARN: Access to undefined parameter `combine_time` -- Initialise it to a default value eg. `params.combine_time = some_value`
+WARN: Access to undefined parameter `kplot_time` -- Initialise it to a default value eg. `params.kplot_time = some_value`
+WARN: Access to undefined parameter `prepare_mem` -- Initialise it to a default value eg. `params.prepare_mem = some_value`
+WARN: Access to undefined parameter `prepare_generalized_mem` -- Initialise it to a default value eg. `params.prepare_generalized_mem = some_value`
+WARN: Access to undefined parameter `factorize_worker_mem` -- Initialise it to a default value eg. `params.factorize_worker_mem = some_value`
+WARN: Access to undefined parameter `combine_mem` -- Initialise it to a default value eg. `params.combine_mem = some_value`
+WARN: Access to undefined parameter `kplot_mem` -- Initialise it to a default value eg. `params.kplot_mem = some_value`
+
+╔════════════════════════════════════════════════════════════╗
+║           cNMF Pipeline Configuration                      ║
+╠════════════════════════════════════════════════════════════╣
+║ Analysis Dir:    /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output
+║ Count File:      /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_data/count_adata.h5ad
+║ Output Dir:      /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes
+║ K Values:        20, 30, 40
+║ N Iterations:    100
+║ Num Genes:       2000
+║ Total Workers:   30
+╚════════════════════════════════════════════════════════════╝
+
+[-        ] prepare_initial     -
+[-        ] prepare_generalized -
+
+[-        ] prepare_initial            -
+[-        ] prepare_generalized        -
+[-        ] factorize_worker           -
+[-        ] factorize_complete         -
+[-        ] check_and_repair_factorize -
+[-        ] combine_results            -
+[-        ] kplot                      -
+
+╔═══════════════════════════════════════╗
+║   Parallel Execution Plan             ║
+╠═══════════════════════════════════════╣
+║ K Values:        20, 30, 40
+║ Total Workers:   30
+║ Total Tasks:     90
+╚═══════════════════════════════════════╝
+
+
+[-        ] prepare_initial            | 0 of 1
+[-        ] prepare_generalized        -
+[-        ] factorize_worker           -
+[-        ] factorize_complete         -
+[-        ] check_and_repair_factorize -
+[-        ] combine_results            -
+[-        ] kplot                      -
+
+╔═══════════════════════════════════════╗
+║   Parallel Execution Plan             ║
+╠═══════════════════════════════════════╣
+║ K Values:        20, 30, 40
+║ Total Workers:   30
+║ Total Tasks:     90
+╚═══════════════════════════════════════╝
+
+
+executor >  slurm (1)
+[56/da26bd] pre…_initial (prepare_initial) | 0 of 1
+[-        ] prepare_generalized            -
+[-        ] factorize_worker               -
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+╔═══════════════════════════════════════╗
+║   Parallel Execution Plan             ║
+╠═══════════════════════════════════════╣
+║ K Values:        20, 30, 40
+║ Total Workers:   30
+║ Total Tasks:     90
+╚═══════════════════════════════════════╝
+
+
+executor >  slurm (1)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[-        ] prepare_generalized            | 0 of 1
+[-        ] factorize_worker               -
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+╔═══════════════════════════════════════╗
+║   Parallel Execution Plan             ║
+╠═══════════════════════════════════════╣
+║ K Values:        20, 30, 40
+║ Total Workers:   30
+║ Total Tasks:     90
+╚═══════════════════════════════════════╝
+
+
+executor >  slurm (2)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 0 of 1
+[-        ] factorize_worker               -
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+╔═══════════════════════════════════════╗
+║   Parallel Execution Plan             ║
+╠═══════════════════════════════════════╣
+║ K Values:        20, 30, 40
+║ Total Workers:   30
+║ Total Tasks:     90
+╚═══════════════════════════════════════╝
+
+
+executor >  slurm (2)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 0 of 1
+[-        ] factorize_worker               -
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (2)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[-        ] factorize_worker               | 0 of 21
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (2)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[-        ] factorize_worker               | 0 of 57
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (2)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[-        ] factorize_worker               | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (3)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[6a/12d5e8] fac…er (factorize_k40_worker0) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (5)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[8d/d1d026] fac…er (factorize_k30_worker0) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (6)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[be/e009d6] fac…er (factorize_k20_worker1) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (8)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[df/f8cc72] fac…er (factorize_k30_worker2) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (9)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[97/ee7b71] fac…er (factorize_k20_worker2) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (11)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[b3/b8f667] fac…er (factorize_k40_worker2) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (12)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[29/41d3c0] fac…er (factorize_k30_worker3) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (14)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[a5/c54308] fac…er (factorize_k30_worker4) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (15)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[3c/1daf59] fac…er (factorize_k20_worker4) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (17)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[06/a1216a] fac…er (factorize_k40_worker4) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (18)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[bd/8e3352] fac…er (factorize_k20_worker5) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (20)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[3d/b17eff] fac…er (factorize_k40_worker5) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (21)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[5d/d07891] fac…er (factorize_k30_worker6) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (23)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[51/519ea3] fac…er (factorize_k40_worker6) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (24)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[1c/371ed2] fac…er (factorize_k20_worker7) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (26)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[f8/57f211] fac…er (factorize_k30_worker8) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (27)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[e5/d3594a] fac…er (factorize_k20_worker8) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (28)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[76/020406] fac…er (factorize_k40_worker7) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (29)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[c4/ce2607] fac…er (factorize_k20_worker9) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (30)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[a8/80fce8] fac…er (factorize_k40_worker8) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (31)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[df/34421f] fac…er (factorize_k30_worker9) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (32)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[f7/63fab0] fac…er (factorize_k40_worker9) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (33)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[b6/1f6ecf] fac…r (factorize_k20_worker10) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (34)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[17/f17a17] fac…r (factorize_k40_worker10) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (35)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[99/7dd8f3] fac…r (factorize_k30_worker10) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (36)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[1a/f1b93f] fac…r (factorize_k30_worker11) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (37)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[18/2353a9] fac…r (factorize_k20_worker11) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (38)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[a2/f9e3c3] fac…r (factorize_k40_worker11) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (39)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[02/fc4321] fac…r (factorize_k20_worker12) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (40)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[71/56b562] fac…r (factorize_k20_worker13) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (41)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[45/a46820] fac…r (factorize_k40_worker12) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (42)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[aa/b38cf2] fac…r (factorize_k30_worker12) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (43)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[a2/460f26] fac…r (factorize_k40_worker13) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (44)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[b2/e2b08b] fac…r (factorize_k30_worker14) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (45)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[05/662c9e] fac…r (factorize_k20_worker14) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (46)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[1f/f1a3ff] fac…r (factorize_k30_worker13) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (48)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[f8/b15f0f] fac…r (factorize_k40_worker15) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (49)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[41/d16f05] fac…r (factorize_k20_worker15) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (51)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[05/8dcd6f] fac…r (factorize_k20_worker16) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (52)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[5f/b99e89] fac…r (factorize_k40_worker16) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (53)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[d8/bd40c1] fac…r (factorize_k30_worker16) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (54)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[42/21f719] fac…r (factorize_k30_worker17) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (55)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[05/2c1a4a] fac…r (factorize_k40_worker17) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (56)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[7c/aa3075] fac…r (factorize_k20_worker17) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (57)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[a2/36e53f] fac…r (factorize_k30_worker18) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (58)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/e2fc1c] fac…r (factorize_k20_worker18) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (59)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[ec/efcc00] fac…r (factorize_k40_worker18) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (60)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[74/b48b97] fac…r (factorize_k30_worker19) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (61)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[84/80d4be] fac…r (factorize_k20_worker19) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (62)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[cc/56b29f] fac…r (factorize_k40_worker19) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (63)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[c4/8efd8a] fac…r (factorize_k20_worker20) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (64)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[db/592086] fac…r (factorize_k40_worker20) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (65)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[ee/c0b375] fac…r (factorize_k20_worker21) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (66)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[7f/ee518d] fac…r (factorize_k30_worker21) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (67)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[ff/bf27fa] fac…r (factorize_k40_worker21) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (68)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[89/12f43f] fac…r (factorize_k30_worker20) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (69)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[3b/5c3d34] fac…r (factorize_k40_worker22) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (70)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[1e/64d429] fac…r (factorize_k20_worker22) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (71)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[f6/7cc7ac] fac…r (factorize_k20_worker23) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (72)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[c6/bdc3c0] fac…r (factorize_k30_worker23) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (73)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[df/75eed8] fac…r (factorize_k40_worker23) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (74)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[3d/6afc4b] fac…r (factorize_k30_worker24) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (75)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[c8/fdfc32] fac…r (factorize_k30_worker22) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (76)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[d6/7f211d] fac…r (factorize_k20_worker24) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (77)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[06/db5555] fac…r (factorize_k40_worker24) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (78)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[8e/61e9f5] fac…r (factorize_k20_worker25) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (79)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[63/386773] fac…r (factorize_k30_worker25) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (80)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[94/6bca79] fac…r (factorize_k40_worker25) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (81)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[10/a16b95] fac…r (factorize_k40_worker26) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (82)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[37/dcaafa] fac…r (factorize_k30_worker26) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (83)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[94/3cbc07] fac…r (factorize_k20_worker26) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (84)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[0a/a8a6b2] fac…r (factorize_k20_worker27) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (85)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[4d/e532a7] fac…r (factorize_k30_worker27) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (86)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[c4/f7db6c] fac…r (factorize_k40_worker27) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (87)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (88)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[89/24d436] fac…r (factorize_k40_worker28) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (89)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[41/7c8817] fac…r (factorize_k20_worker29) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (90)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[af/4f9fb8] fac…r (factorize_k20_worker28) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (90)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[af/4f9fb8] fac…r (factorize_k20_worker28) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[5b/30285f] fac…r (factorize_k40_worker29) | 0 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[97/ee7b71] fac…er (factorize_k20_worker2) | 1 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[6a/12d5e8] fac…er (factorize_k40_worker0) | 2 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[99/7dd8f3] fac…r (factorize_k30_worker10) | 4 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[73/7b7b57] fac…er (factorize_k30_worker1) | 7 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[76/020406] fac…er (factorize_k40_worker7) | 10 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[bb/547dd4] fac…er (factorize_k20_worker0) | 12 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[51/519ea3] fac…er (factorize_k40_worker6) | 18 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[02/fc4321] fac…r (factorize_k20_worker12) | 21 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[1c/371ed2] fac…er (factorize_k20_worker7) | 24 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[53/da99e4] fac…r (factorize_k40_worker14) | 31 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[f8/57f211] fac…er (factorize_k30_worker8) | 37 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[3c/1daf59] fac…er (factorize_k20_worker4) | 40 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[f7/63fab0] fac…er (factorize_k40_worker9) | 41 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[c4/ce2607] fac…er (factorize_k20_worker9) | 42 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[df/34421f] fac…er (factorize_k30_worker9) | 43 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[1a/f1b93f] fac…r (factorize_k30_worker11) | 46 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[45/a46820] fac…r (factorize_k40_worker12) | 47 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[7c/aa3075] fac…r (factorize_k20_worker17) | 48 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[42/21f719] fac…r (factorize_k30_worker17) | 50 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[05/2c1a4a] fac…r (factorize_k40_worker17) | 51 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[5f/b99e89] fac…r (factorize_k40_worker16) | 52 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[4b/f71270] fac…r (factorize_k30_worker15) | 53 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[d8/bd40c1] fac…r (factorize_k30_worker16) | 54 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[ee/c0b375] fac…r (factorize_k20_worker21) | 56 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[7f/ee518d] fac…r (factorize_k30_worker21) | 58 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[db/592086] fac…r (factorize_k40_worker20) | 60 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[84/80d4be] fac…r (factorize_k20_worker19) | 61 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[d6/7f211d] fac…r (factorize_k20_worker24) | 63 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[89/12f43f] fac…r (factorize_k30_worker20) | 65 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[3b/5c3d34] fac…r (factorize_k40_worker22) | 68 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[c8/fdfc32] fac…r (factorize_k30_worker22) | 72 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[06/db5555] fac…r (factorize_k40_worker24) | 74 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[89/24d436] fac…r (factorize_k40_worker28) | 76 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[4d/e532a7] fac…r (factorize_k30_worker27) | 80 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[41/7c8817] fac…r (factorize_k20_worker29) | 81 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[5b/30285f] fac…r (factorize_k40_worker29) | 83 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[63/386773] fac…r (factorize_k30_worker25) | 84 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[94/6bca79] fac…r (factorize_k40_worker25) | 87 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[af/4f9fb8] fac…r (factorize_k20_worker28) | 88 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[1d/2d0883] fac…r (factorize_k30_worker29) | 89 of 90
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[-        ] factorize_complete             -
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (92)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[-        ] factorize_complete             | 0 of 3
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (93)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[50/2836a9] fac…e (factorize_complete_k20) | 0 of 3
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (95)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 0 of 3
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (95)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 0 of 3
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+
+executor >  slurm (95)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[-        ] check_and_repair_factorize     -
+[-        ] combine_results                -
+[-        ] kplot                          -
+>>> All factorization completed for k=20
+>>> All factorization completed for k=40
+>>> All factorization completed for k=30
+
+executor >  slurm (96)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 0 of 1
+[-        ] combine_results                -
+[-        ] kplot                          -
+>>> All factorization completed for k=20
+>>> All factorization completed for k=40
+>>> All factorization completed for k=30
+
+executor >  slurm (96)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[-        ] combine_results                | 0 of 1
+[-        ] kplot                          -
+>>> All factorization completed for k=20
+>>> All factorization completed for k=40
+>>> All factorization completed for k=30
+
+executor >  slurm (97)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[e6/42fbb0] com…_results (combine_results) | 0 of 1
+[-        ] kplot                          -
+>>> All factorization completed for k=20
+>>> All factorization completed for k=40
+>>> All factorization completed for k=30
+
+executor >  slurm (97)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[e6/42fbb0] com…_results (combine_results) | 0 of 1
+[-        ] kplot                          -
+>>> All factorization completed for k=20
+>>> All factorization completed for k=40
+>>> All factorization completed for k=30
+
+executor >  slurm (97)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[e6/42fbb0] com…_results (combine_results) | 1 of 1 ✔
+[-        ] kplot                          | 0 of 1
+>>> All CNMF analyses completed successfully!
+>>> Results available in: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/
+
+
+
+
+executor >  slurm (98)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[e6/42fbb0] com…_results (combine_results) | 1 of 1 ✔
+[92/b5507a] kplot (k_selection_plot)       | 0 of 1
+>>> All CNMF analyses completed successfully!
+>>> Results available in: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/
+
+
+
+
+executor >  slurm (98)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[e6/42fbb0] com…_results (combine_results) | 1 of 1 ✔
+[92/b5507a] kplot (k_selection_plot)       | 0 of 1
+>>> All CNMF analyses completed successfully!
+>>> Results available in: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/
+
+executor >  slurm (98)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[e6/42fbb0] com…_results (combine_results) | 1 of 1 ✔
+[92/b5507a] kplot (k_selection_plot)       | 1 of 1 ✔
+>>> All CNMF analyses completed successfully!
+>>> Results available in: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/
+
+executor >  slurm (98)
+[56/da26bd] pre…_initial (prepare_initial) | 1 of 1 ✔
+[9f/dc48d7] pre…ized (prepare_generalized) | 1 of 1 ✔
+[70/ab82ed] fac…r (factorize_k30_worker28) | 90 of 90 ✔
+[2e/55b1d8] fac…e (factorize_complete_k30) | 3 of 3 ✔
+[ee/840da7] che…heck_and_repair_factorize) | 1 of 1 ✔
+[e6/42fbb0] com…_results (combine_results) | 1 of 1 ✔
+[92/b5507a] kplot (k_selection_plot)       | 1 of 1 ✔
+>>> All CNMF analyses completed successfully!
+>>> Results available in: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/
+Completed at: 23-Nov-2025 22:21:16
+Duration    : 10m 37s
+CPU hours   : 3.6
+Succeeded   : 98
+
+

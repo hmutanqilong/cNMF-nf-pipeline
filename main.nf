@@ -249,6 +249,106 @@ process factorize_complete {
     """
 }
 
+
+// PROCESS new check and repair factorize
+process check_and_repair_factorize {
+    tag "check_and_repair_factorize"
+
+    publishDir outDir, mode: 'copy', overwrite: true, pattern: "*_report.txt"
+
+    input:
+    val(k_list)
+
+    output:
+    path("factorize_repair.done"), emit: repair_done
+    path("check_report.txt"), emit: check_report
+    path("repair_report.txt"), optional: true, emit: repair_report
+
+    script:
+    def outDirAbs = outDir
+    """
+    echo ">>> Step 1: checing factorization completeness ..."
+
+    python ${projectDir}/scripts/check_factorize_completeness.py \
+        --output-dir ${outDirAbs} \
+        --name ${params.name} \
+        --expected-iters ${params.n_iter} \
+        --k-values ${kList.join(',')} > check_report.txt 2>&1
+    
+    CHECK_RESULT=\${PIPESTATUS[0]}
+    
+    if [ \$CHECK_RESULT -eq 0 ]; then
+        echo ">>> All factorizations are complete!"
+        touch factorize_repair.done
+    elif [ \$CHECK_RESULT -eq 1 ]; then
+        echo ">>> Incomplete iterations detected. Attempting repair..."
+        python ${projectDir}/scripts/repair_incomplete_factorize.py \
+            --output-dir ${outDirAbs} \
+            --name ${params.name} > repair_report.txt 2>&1
+        
+        REPAIR_RESULT=\${PIPESTATUS[0]}
+        if [ \$REPAIR_RESULT -eq 0 ]; then
+            echo ">>> Repair successful!"
+            touch factorize_repair.done
+        else
+            echo ">>> ERROR: Repair failed. Check logs above."
+            exit 1
+        fi
+    else
+        echo ">>> ERROR: Factorization check failed."
+        exit 1
+    fi
+    """
+}
+
+//#process check_and_repair_factorize {
+//#    tag "check_and_repair_factorize"
+//#    
+//#    publishDir outDir, mode: 'copy', overwrite: true
+//#
+//#    input:
+//#    val(k_list)
+//#
+//#    output:
+//#    path("factorize_repair.done"), emit: repair_done
+//#
+//#    script:
+//#    def outDirAbs = outDir
+//#    """
+//#    echo ">>> Step 1: checing factorization completeness ..."
+//#
+//#    python ${projectDir}/scripts/check_factorize_completeness.py \
+//#        --output-dir ${outDirAbs} \
+//#        --name ${params.name} \
+//#        --expected-iters ${params.n_iter} \
+//#        --k-values ${kList.join(',')}
+//#    
+//#    CHECK_RESULT=\$?
+//#    
+//#    if [ \$CHECK_RESULT -eq 0 ]; then
+//#        echo ">>> All factorizations are complete!"
+//#        touch factorize_repair.done
+//#    elif [ \$CHECK_RESULT -eq 1 ]; then
+//#        echo ">>> Incomplete iterations detected. Attempting repair..."
+//#        python ${projectDir}/scripts/repair_incomplete_factorize.py \
+//#            --output-dir ${outDirAbs} \
+//#            --name ${params.name}
+//#        
+//#        if [ \$? -eq 0 ]; then
+//#            echo ">>> Repair successful!"
+//#            touch factorize_repair.done
+//#        else
+//#            echo ">>> ERROR: Repair failed. Check logs above."
+//#            exit 1
+//#        fi
+//#    else
+//#        echo ">>> ERROR: Factorization check failed."
+//#        exit 1
+//#    fi
+//#    """
+//#}
+
+
 // PROCESS E: cNMF combine results
 process combine_results {
     tag "combine_results"
@@ -359,11 +459,23 @@ workflow {
     factorize_complete_out.k_completed.subscribe { k ->
         println ">>> All factorization completed for k=${k}"
     }
+    
+    // step 5.5 检查并修复
+    repair_out = check_and_repair_factorize(
+        factorize_complete_out.k_completed.collect()
+    )
+    
+    // print information
+    repair_out.check_report.subscribe { report_file ->
+    println report_file.text
+    }
+
+    repair_out.repair_report.subscribe { report_file ->
+    println report_file.text
+    }
 
     // step 6: combine
-    cnmf_combine_out = combine_results(
-        factorize_complete_out.k_completed.collect()   // 收集所有k值成列表
-    )
+    cnmf_combine_out = combine_results(repair_out.repair_done)
 
     // 打印最终完成信息
     cnmf_combine_out.combine_done.subscribe { done_file ->

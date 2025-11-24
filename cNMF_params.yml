@@ -1,8 +1,8 @@
 # cNMF pipeline parameters
 
 # --- input & output file ---- #
-analysisDir: "/project/xuanyao/qilong/Project/Core_Gene_Programs_II/05_causal_model/02_cNMF_gene_programs"
-count_fp: "/project/xuanyao/qilong/share_data/example_data/count_adata.h5ad"
+analysisDir: "/project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output"
+count_fp: "/project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_data/count_adata.h5ad"
 name: "pbmc"
 
 # --- parallel --- #

@@ -1,0 +1,45 @@
+✓ Updated parameter file: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/cnmf_tmp/pbmc.nmf_params.df.npz
+
+======================================================================
+INCOMPLETE FACTORIZATION TASKS DETECTED: 1 tasks
+======================================================================
+
+k=30: 1 incomplete iterations
+  Missing iterations: [17]
+
+======================================================================
+
+
+Starting repair of incomplete factorization tasks...
+Output dir: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes
+Name: pbmc
+Total workers: 1
+
+Step 1: Scanning filesystem to update task completion status...
+✓ Updated parameter file: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/cnmf_tmp/pbmc.nmf_params.df.npz
+
+Step 2: Detecting incomplete tasks...
+
+======================================================================
+INCOMPLETE FACTORIZATION TASKS DETECTED: 1 tasks
+======================================================================
+
+k=30: 1 incomplete iterations
+  Missing iterations: [17]
+
+======================================================================
+
+
+Step 3: Running factorize to repair incomplete iterations...
+Using skip_completed_runs=True to skip already completed tasks
+
+Initializing cNMF object...
+Running factorize with skip_completed_runs=True...
+[Worker 0]. Starting task 117.
+
+✓ Factorize repair completed!
+
+Step 4: Verifying completion...
+✓ Updated parameter file: /project/xuanyao/qilong/techstack_qltan/cNMF_nf-pipeline/example_output/top2000VariableGenes/pbmc/cnmf_tmp/pbmc.nmf_params.df.npz
+✓ All factorization tasks are complete!
+✓ All tasks are now complete!
